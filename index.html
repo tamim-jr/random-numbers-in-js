@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number in Js</title>
+</head>
+<style>
+    .container{
+        text-align: center;
+    }
+    #demo{
+        font-size: 10rem;
+        font-weight: bold;
+        color: blueviolet;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>JavaScript Random Numbers</h1>
+        <p>
+            This is the way you make ranpdom numbers by Java Script
+        </p>
+
+        <button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,7)">Click Here</button>
+        <p id="demo"></p>
+    </div>
+    <script>
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+    </script>
+</body>
+
+</html>
